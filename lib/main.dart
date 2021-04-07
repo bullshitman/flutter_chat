@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat/screens/registration_screen.dart';
 import 'screens/welcome_screen.dart';
+import 'screens/login_screen.dart';
 
 void main() {
   runApp(Chat());
@@ -18,11 +19,11 @@ class Chat extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: WelcomeScreen.id,
+      initialRoute: LoginScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
-        // 'login_screen': (context) => LoginScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
         // 'chat_screen' : (context) => ChatScreen(),
       },
     );

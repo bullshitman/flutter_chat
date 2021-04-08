@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat/screens/chat_screen.dart';
+import 'package:flutter_chat/screens/login_screen.dart';
+import 'package:flutter_chat/screens/registration_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
-  static String id = 'welcome_screen';
+  static const String id = 'welcome_screen';
 
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
@@ -20,9 +23,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           children: [
             Row(
               children: [
-                Container(
-                  child: Image.asset('images/logo.png'),
-                  height: 60.0,
+                Hero(
+                  tag: 'logo',
+                  child: Container(
+                    child: Image.asset('images/logo.png'),
+                    height: 60.0,
+                  ),
                 ),
                 Text(
                   'Flash chaT',
@@ -47,7 +53,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   minWidth: 200.0,
                   height: 42.0,
                   onPressed: () {
-                    //main screen
+                    Navigator.pushNamed(context, LoginScreen.id);
                   },
                   child: Text('Log in'),
                 ),
@@ -63,7 +69,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   minWidth: 200.0,
                   height: 42.0,
                   onPressed: () {
-                    //reg screen
+                    Navigator.pushNamed(context, RegistrationScreen.id);
                   },
                   child: Text('Register'),
                 ),

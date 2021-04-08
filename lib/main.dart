@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_chat/screens/registration_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/chat_screen.dart';
 
 void main() {
   runApp(Chat());
@@ -19,12 +20,12 @@ class Chat extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: LoginScreen.id,
+      initialRoute: ChatScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
         RegistrationScreen.id: (context) => RegistrationScreen(),
         LoginScreen.id: (context) => LoginScreen(),
-        // 'chat_screen' : (context) => ChatScreen(),
+        ChatScreen.id: (context) => ChatScreen(),
       },
     );
   }

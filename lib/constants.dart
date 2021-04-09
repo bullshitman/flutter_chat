@@ -17,3 +17,19 @@ const kButtonSendTextStyle = TextStyle(
   fontSize: 18.0,
   fontWeight: FontWeight.bold,
 );
+
+const kTextFieldButtonInputDecoration = InputDecoration(
+  hintText: ('Some hintText'),
+  contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+    borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+    borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
+  ),
+);

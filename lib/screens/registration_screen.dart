@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat/constants.dart';
+import 'package:flutter_chat/widgets/rounded_button.dart';
 
 class RegistrationScreen extends StatefulWidget {
   static const String id = 'registration_screen';
@@ -32,23 +34,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               onChanged: (value) {
                 //TODO user input
               },
-              decoration: InputDecoration(
-                hintText: ('Enter email'),
-                contentPadding:
-                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                  borderSide:
-                      BorderSide(color: Colors.lightBlueAccent, width: 1.0),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderSide:
-                      BorderSide(color: Colors.lightBlueAccent, width: 2.0),
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
+              decoration: kTextFieldButtonInputDecoration.copyWith(
+                hintText: 'Enter email',
               ),
             ),
             SizedBox(
@@ -58,46 +45,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               onChanged: (value) {
                 //TODO user input
               },
-              decoration: InputDecoration(
-                hintText: ('Enter password'),
-                contentPadding:
-                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                  borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                  borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
-                ),
+              decoration: kTextFieldButtonInputDecoration.copyWith(
+                hintText: 'Enter password',
               ),
             ),
             SizedBox(
               height: 24.0,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16.0),
-              child: Material(
-                color: Colors.blueAccent,
-                borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                elevation: 5.0,
-                child: MaterialButton(
-                  minWidth: 200.0,
-                  // height: .0,
-                  onPressed: () {
-                    //TODO register action
-                  },
-                  child: Text(
-                    'Register',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
+            RoundedButton(
+              label: 'Register',
+              color: Colors.lightBlueAccent,
+              onPressed: null,
             ),
           ],
         ),

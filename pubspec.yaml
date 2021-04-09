@@ -9,6 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  animated_text_kit: ^4.1.1
 flutter_icons:
   android: launcher_icon
   ios: true
@@ -20,4 +21,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - images\
+  - images\

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "784347317648",
+    "project_id": "fastashellchat",
+    "storage_bucket": "fastashellchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784347317648:android:bcab527d5f63205a559f15",
+        "android_client_info": {
+          "package_name": "com.bullshitman.flutter_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784347317648-cm34ir91f59eskf2r1nk68ma2voqst2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1mAbGeODppPYX9xwKL7BVBOOGIxq9UxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784347317648-cm34ir91f59eskf2r1nk68ma2voqst2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

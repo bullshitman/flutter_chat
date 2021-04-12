@@ -1,6 +1,6 @@
 # flutter_chat
 
-Chat Flutter app.
+Chat Flutter app based on firebase services.
 
 ## Getting Started
 
